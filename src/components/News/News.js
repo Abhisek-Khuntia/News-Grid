@@ -5,7 +5,7 @@ function News() {
 
   const[news,setNews] = useState([]) ;
   const[search,setSearch] = useState('');
-  const[query,setQuery] = useState('America');
+  const[query,setQuery] = useState('Australia');
 
   const url= `https://newsapi.org/v2/top-headlines?q=${query}&from=2021-03-14&sortBy=publishedAt&apiKey=c1188de200b6458d9dc341caa4c38d3a`;
 
