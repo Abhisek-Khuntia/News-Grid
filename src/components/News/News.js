@@ -32,7 +32,7 @@ function News() {
     setQuery(search)
   }
 
-  const recentNews = news.map(item=>(<NewSingle key={item.url} item={item}/>))
+  const trendingNews = news.map(item=>(<NewSingle key={item.url} item={item}/>))
   console.log(news)
   
   return (
@@ -55,7 +55,7 @@ function News() {
       </form>
       
       <h1>{query} News</h1>
-      <div className="row">{recentNews}</div>
+      <div className="row">{trendingNews}</div>
     </div>
   );
 }
